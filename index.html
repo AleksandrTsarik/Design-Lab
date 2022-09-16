@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="js/jquery.min.js"></script>
+   <script src="js/jquery-ui.min.js"></script>
+   <script src="js/slick.min.js"></script>
+   <script src="js/jquery.mask.min.js"></script>
+   <link rel="stylesheet" href="style/ui.css">
+   <link rel="stylesheet" href="style/slick.css">
+   <link rel="stylesheet" href="style/main.css">
+   <title>Design Lab</title>
+</head>
+<body>
+   <header class="header">
+      <div class="container">
+         <nav class="header-menu">
+            <ul class="header-menu__list">
+               <li>
+                  <a href="#table" class="scroll-to">Таблица</a>
+               </li>
+               <li>
+                  <a href="#form" class="scroll-to">Форма</a>
+               </li>
+               <li>
+                  <a href="#gallery" class="scroll-to">Галерея</a>
+               </li>
+            </ul>
+         </nav>
+      </div>
+   </header>
+   <main class="main">
+      <div class="container">
+         <div class="main-block">
+            <nav class="main-bread-crumbs">
+               <ul class="main-bread-crumbs__list">
+                  <li><a href="#">Главная</a></li>
+                  <li><a href="#">Тестовое задание</a></li>
+               </ul>
+            </nav>
+            <h1 class="main__title">Тестовое задание</h1>
+         </div>
+         <div class="table" id="table">
+            <div class="">
+               <h2 class="table__title title">Таблица</h2>
+               <div class="table__subtitle text">Должна быть адаптивной, без дублирования информации.</div>
+            </div>
+            <div class="table-wrap">
+               <div class="table-block">
+                  <div class="table-head">
+                     <div class="table-head__name table-fb">Название</div>
+                     <div class="table-head__name table-fb">Материал</div>
+                     <div class="table-head__name table-fb">Размер</div>
+                     <div class="table-head__name table-fb">Цена</div>
+                  </div>
+                  <div class="table-body">
+                     <div class="table-body__row">
+                        <div class="table-body__item table-fb" data-label="Название">Стеновой паркет</div>
+                        <div class="table-body__item table-fb" data-label="Материал">Ольха</div>
+                        <div class="table-body__item table-fb" data-label="Размер">13 x 78 x 300 мм</div>
+                        <div class="table-body__item table-fb" data-label="Цена">
+                           <div class="table-body__item-left">52 <span class="rouble">o</span></div>
+                           <div class="table-body__item-right"><button class="btn btn-basket">В корзину</button></div>
+                        </div>
+                     </div>
+                     <div class="table-body__row">
+                        <div class="table-body__item table-fb" data-label="Название">Стеновой паркет</div>
+                        <div class="table-body__item table-fb" data-label="Материал">Ольха</div>
+                        <div class="table-body__item table-fb" data-label="Размер">13 x 78 x 600 мм</div>
+                        <div class="table-body__item table-fb" data-label="Цена">
+                           <div class="table-body__item-left">112 <span class="rouble">o</span></div>
+                           <div class="table-body__item-right"><button class="btn btn-basket">В корзину</button></div>
+                        </div>
+                     </div>
+                     <div class="table-body__row">
+                        <div class="table-body__item table-fb" data-label="Название">Доска для пола, сорт&nbsp;А</div>
+                        <div class="table-body__item table-fb" data-label="Материал">Лиственница</div>
+                        <div class="table-body__item table-fb" data-label="Размер">27 x 134 x 2000 мм</div>
+                        <div class="table-body__item table-fb" data-label="Цена">
+                           <div class="table-body__item-left">1062 <span class="rouble">o</span></div>
+                           <div class="table-body__item-right"><button class="btn btn-basket">В корзину</button></div>
+                        </div>
+                     </div>
+                     <div class="table-body__row">
+                        <div class="table-body__item table-fb" data-label="Название">Вагонка</div>
+                        <div class="table-body__item table-fb" data-label="Материал">Термо-абаш</div>
+                        <div class="table-body__item table-fb" data-label="Размер">19 x 90 x 2000 мм</div>
+                        <div class="table-body__item table-fb" data-label="Цена">
+                           <div class="table-body__item-left">1009 <span class="rouble">o</span></div>
+                           <div class="table-body__item-right"><button class="btn btn-basket">В корзину</button></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="form" id="form">
+            <h2 class="form__title title">Форма</h2>
+            <div class="form__subtitle text">Должна иметь проверку полей: обязательное поле, формат, минимальное
+               значение. При несоответствии должна выводиться соответствующая ошибка. Поле «Телефон» должен содержать
+               маску ввода. Проверка, маска и вывод ошибки должны быть сделаны на JS или JQuery, но без плагинов.
+            </div>
+            <form action="" >
+               <div class="form__inner">
+                  <div class="form__name">Заказать проект</div>
+                  <div class="form-step">
+                     <div class="form__block">
+                        <label class="form__label">
+                           <span class="form__label-name">Название</span>
+                           <input type="text" class="form__input js-vall">
+                        </label>
+                     </div>
+                  </div>
+                  <div class="form-step form-step__choice">
+                     <div class="form__block form-block__filter">
+                        <label class="form__label">
+                           <span class="form__label-name">Стоимость</span>
+                           <input type="text" id="js-range-val" class="form__input form-input js-num ">
+                           <div class="js-range">
+                           </div>
+                           <div class="form-input__numb">
+                              <div>10</div>
+                              <div>20</div>
+                              <div>30</div>
+                              <div>40+</div>
+                           </div>
+                        </label>
+                     </div>
+                     <div class="form__block">
+                        <label class="form__label">
+                           <span class="form__label-name">Площадь</span>
+                           <div class="form-count__block">
+                              <span class="form-count form-count__minus js-count-minus"></span>
+                              <input type="text" class="form__input js-counter" value="200 м²">
+                              <span class="form-count form-count__plus js-count-plus"></span>
+                           </div>
+                        </label>
+                     </div>
+                     <div class="form__block form__block-checkbox">
+                        <label class="form__label">
+                           <span class="form__label-name">Отделка</span>
+                           <div class="form-checkbox">
+                              <div class="form-checkbox__inner">
+                                 <input type="checkbox" class="form__input form-input__checkbox">
+                                 <span class="form-input__checked"></span>
+                              </div>
+                              <span>Вайтбокс</span>
+                           </div>
+                        </label>
+                     </div>
+                  </div>
+                  <div class="form-step form-step__contact">
+                     <div class="form__block">
+                        <label class="form__label">
+                           <span class="form__label-name">Телефон</span>
+                           <input type="tex" class="form__input js-phone js-vall" placeholder="+7">
+                        </label>
+                     </div>
+                     <div class="form__block">
+                        <label class="form__label">
+                           <span class="form__label-name">Почта</span>
+                           <input type="email" class="form__input js-email js-vall">
+                        </label>
+                     </div>
+                  </div>
+                  <div class="form-step">
+                     <div class="form__block">
+                        <div class="form-foto-block">
+                           <div class="form-foto-preview" id="dropbox"></div>
+                           <div class="form-foto-block-inner">
+                              <div class="form-foto-load">
+                                 <input type="file" id="fileElem" multiple accept="image/*" style="display:none"
+                                    onchange="handleFiles(this.files)">
+                                 <label for="fileElem">Кликните или перенесите файлы в эту область. <br/>
+                                    Только JPG, до 1 Мб</label>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="form-foto-block__info"></div>
+                     </div>
+                  </div>
+
+                  <div class="form-step form-step__password">
+                     <div class="form__block">
+                        <label class="form__label form-select js-select-field">
+                           <span class="form__label-name">Материал дома</span>
+                           <input class="js-select-value" type="hidden" value="0">
+                           <div class="form-select__caption js-select-caption">не выбрано</div>
+                           <div class="form-select-block js-select-options">
+                              <div class="form-select-block__item js-select-option" data-val="1">Любые</div>
+                              <div class="form-select-block__item js-select-option" data-val="2">Кирпичный</div>
+                              <div class="form-select-block__item js-select-option" data-val="3">Деревянный</div>
+                              <div class="form-select-block__item js-select-option" data-val="4">Монолитный</div>
+                              <div class="form-select-block__item js-select-option" data-val="5">Каркасный</div>
+                              <div class="form-select-block__item js-select-option" data-val="6">Щитовой</div>
+                           </div>
+                        </label>
+                     </div>
+                     <div class="form__block">
+                        <label class="form__label form-password">
+                           <span class="form__label-name">Пароль</span>
+                           <div class="form-password__block">
+                              <input type="password" class="form__input js-password">
+                              <span class="form-password__img">
+                                 <img src="img/eye-icon.svg" alt="">
+                              </span>
+                           </div>
+
+                        </label>
+                     </div>
+                  </div>
+                  <div class="form-step">
+                     <div class="form__block">
+                        <label class="form__label">
+                           <span class="form__label-name">Пожелания</span>
+                           <input type="text" class="form__input js-regard">
+                           <div class="form-regard"></div>
+                        </label>
+                     </div>
+                  </div>
+                  <div class="form-step form-step__btn">
+                     <button class="btn" type="submit">Отправить заявку</button>
+                  </div>
+               </div>
+            </form>
+         </div>
+         <div class="gallery" id="gallery">
+            <div class="gallery-title__block">
+               <h2 class="gallery__title title">Галерея</h2>
+               <div class="gallery__subtitle text">Фильтры должны фильтровать изображения без перезагрузки.
+                  Адаптивность: между реперными точками — пропорциональное масштабирование, далее уменьшение кол-ва фото
+                  в строке. Пролистывание должно быть по 8 фото (страницами) для дектопа, по 4 фото на мобилке. Стрелки
+                  появляются только при наведении на блок с фото. Галерея должна быть сделана на JS или JQuery, но без
+                  плагинов.</div>
+            </div>
+            <div class="gallery-tabs ">
+               <div class="gallery-tab__item js-tab-trigger _active" data-tab="1">Бани</div>
+               <div class="gallery-tab__item js-tab-trigger" data-tab="2">Сауны</div>
+               <div class="gallery-tab__item js-tab-trigger" data-tab="3">Хаммамы</div>
+               <div class="gallery-tab__item js-tab-trigger" data-tab="4">Хаммамы</div>
+            </div>
+            <div class="gallery-img">
+               <div class="gallery-tab-item__block js-tab-content _active" data-tab="1">
+                  <div class="slider">
+                     <div class="slider__item">
+                        <div class="slider__inner">
+                           <div>
+                              <img src="img/slider/item1.jpg" alt="">
+                           </div>
+                           <div>
+                              <img src="img/slider/item4.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="slider__item">
+                        <div class="slider__inner">
+                           <div>
+                              <img src="img/slider/item2.jpg" alt="">
+                           </div>
+                           <div>
+                              <img src="img/slider/item5.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="slider__item">
+                        <div class="slider__inner">
+                           <div>
+                              <img src="img/slider/item3.jpg" alt="">
+                           </div>
+                           <div>
+                              <img src="img/slider/item6.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="slider__item">
+                        <div class="slider__inner">
+                           <div>
+                              <img src="img/slider/item4.jpg" alt="">
+                           </div>
+                           <div>
+                              <img src="img/slider/item7.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="slider__item">
+                        <div class="slider__inner">
+                           <div>
+                              <img src="img/slider/item1.jpg" alt="">
+                           </div>
+                           <div>
+                              <img src="img/slider/item4.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="slider__item">
+                        <div class="slider__inner">
+                           <div>
+                              <img src="img/slider/item2.jpg" alt="">
+                           </div>
+                           <div>
+                              <img src="img/slider/item5.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="slider__item">
+                        <div class="slider__inner">
+                           <div>
+                              <img src="img/slider/item3.jpg" alt="">
+                           </div>
+                           <div>
+                              <img src="img/slider/item6.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="slider__item">
+                        <div class="slider__inner">
+                           <div>
+                              <img src="img/slider/item4.jpg" alt="">
+                           </div>
+                           <div>
+                              <img src="img/slider/item7.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="slider__item">
+                        <div class="slider__inner">
+                           <div>
+                              <img src="img/slider/item1.jpg" alt="">
+                           </div>
+                           <div>
+                              <img src="img/slider/item4.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="slider__item">
+                        <div class="slider__inner">
+                           <div>
+                              <img src="img/slider/item2.jpg" alt="">
+                           </div>
+                           <div>
+                              <img src="img/slider/item5.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="slider__item">
+                        <div class="slider__inner">
+                           <div>
+                              <img src="img/slider/item3.jpg" alt="">
+                           </div>
+                           <div>
+                              <img src="img/slider/item6.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="slider__item">
+                        <div class="slider__inner">
+                           <div>
+                              <img src="img/slider/item4.jpg" alt="">
+                           </div>
+                           <div>
+                              <img src="img/slider/item7.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="slider__item">
+                        <div class="slider__inner">
+                           <div>
+                              <img src="img/slider/item1.jpg" alt="">
+                           </div>
+                           <div>
+                              <img src="img/slider/item4.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="slider__item">
+                        <div class="slider__inner">
+                           <div>
+                              <img src="img/slider/item2.jpg" alt="">
+                           </div>
+                           <div>
+                              <img src="img/slider/item5.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="slider__item">
+                        <div class="slider__inner">
+                           <div>
+                              <img src="img/slider/item3.jpg" alt="">
+                           </div>
+                           <div>
+                              <img src="img/slider/item6.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="slider__item">
+                        <div class="slider__inner">
+                           <div>
+                              <img src="img/slider/item4.jpg" alt="">
+                           </div>
+                           <div>
+                              <img src="img/slider/item7.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="gallery-tab-item__block js-tab-content" data-tab="2">
+                  <div class="slider">
+                     <div class="slider__item">
+                        <div class="slider__inner">
+                           <div>
+                              <img src="img/slider/item3.jpg" alt="">
+                           </div>
+                           <div>
+                              <img src="img/slider/item6.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="slider__item">
+                        <div class="slider__inner">
+                           <div>
+                              <img src="img/slider/item1.jpg" alt="">
+                           </div>
+                           <div>
+                              <img src="img/slider/item4.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="slider__item">
+                        <div class="slider__inner">
+                           <div>
+                              <img src="img/slider/item2.jpg" alt="">
+                           </div>
+                           <div>
+                              <img src="img/slider/item5.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="slider__item">
+                        <div class="slider__inner">
+                           <div>
+                              <img src="img/slider/item4.jpg" alt="">
+                           </div>
+                           <div>
+                              <img src="img/slider/item7.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="slider__item">
+                        <div class="slider__inner">
+                           <div>
+                              <img src="img/slider/item1.jpg" alt="">
+                           </div>
+                           <div>
+                              <img src="img/slider/item4.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="slider__item">
+                        <div class="slider__inner">
+                           <div>
+                              <img src="img/slider/item2.jpg" alt="">
+                           </div>
+                           <div>
+                              <img src="img/slider/item5.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="slider__item">
+                        <div class="slider__inner">
+                           <div>
+                              <img src="img/slider/item3.jpg" alt="">
+                           </div>
+                           <div>
+                              <img src="img/slider/item6.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="slider__item">
+                        <div class="slider__inner">
+                           <div>
+                              <img src="img/slider/item4.jpg" alt="">
+                           </div>
+                           <div>
+                              <img src="img/slider/item7.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="slider__item">
+                        <div class="slider__inner">
+                           <div>
+                              <img src="img/slider/item1.jpg" alt="">
+                           </div>
+                           <div>
+                              <img src="img/slider/item4.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="slider__item">
+                        <div class="slider__inner">
+                           <div>
+                              <img src="img/slider/item2.jpg" alt="">
+                           </div>
+                           <div>
+                              <img src="img/slider/item5.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="slider__item">
+                        <div class="slider__inner">
+                           <div>
+                              <img src="img/slider/item3.jpg" alt="">
+                           </div>
+                           <div>
+                              <img src="img/slider/item6.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="slider__item">
+                        <div class="slider__inner">
+                           <div>
+                              <img src="img/slider/item4.jpg" alt="">
+                           </div>
+                           <div>
+                              <img src="img/slider/item7.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="slider__item">
+                        <div class="slider__inner">
+                           <div>
+                              <img src="img/slider/item1.jpg" alt="">
+                           </div>
+                           <div>
+                              <img src="img/slider/item4.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="slider__item">
+                        <div class="slider__inner">
+                           <div>
+                              <img src="img/slider/item2.jpg" alt="">
+                           </div>
+                           <div>
+                              <img src="img/slider/item5.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="slider__item">
+                        <div class="slider__inner">
+                           <div>
+                              <img src="img/slider/item3.jpg" alt="">
+                           </div>
+                           <div>
+                              <img src="img/slider/item6.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="slider__item">
+                        <div class="slider__inner">
+                           <div>
+                              <img src="img/slider/item4.jpg" alt="">
+                           </div>
+                           <div>
+                              <img src="img/slider/item7.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="gallery-tab-item__block js-tab-content" data-tab="3">
+                  <div class="slider">
+                     <div class="slider__item">
+                        <div class="slider__inner">
+                           <div>
+                              <img src="img/slider/item4.jpg" alt="">
+                           </div>
+                           <div>
+                              <img src="img/slider/item7.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="slider__item">
+                        <div class="slider__inner">
+                           <div>
+                              <img src="img/slider/item1.jpg" alt="">
+                           </div>
+                           <div>
+                              <img src="img/slider/item4.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="slider__item">
+                        <div class="slider__inner">
+                           <div>
+                              <img src="img/slider/item2.jpg" alt="">
+                           </div>
+                           <div>
+                              <img src="img/slider/item5.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="slider__item">
+                        <div class="slider__inner">
+                           <div>
+                              <img src="img/slider/item3.jpg" alt="">
+                           </div>
+                           <div>
+                              <img src="img/slider/item6.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                     
+
+                     <div class="slider__item">
+                        <div class="slider__inner">
+                           <div>
+                              <img src="img/slider/item1.jpg" alt="">
+                           </div>
+                           <div>
+                              <img src="img/slider/item4.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="slider__item">
+                        <div class="slider__inner">
+                           <div>
+                              <img src="img/slider/item2.jpg" alt="">
+                           </div>
+                           <div>
+                              <img src="img/slider/item5.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="slider__item">
+                        <div class="slider__inner">
+                           <div>
+                              <img src="img/slider/item3.jpg" alt="">
+                           </div>
+                           <div>
+                              <img src="img/slider/item6.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="slider__item">
+                        <div class="slider__inner">
+                           <div>
+                              <img src="img/slider/item4.jpg" alt="">
+                           </div>
+                           <div>
+                              <img src="img/slider/item7.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="slider__item">
+                        <div class="slider__inner">
+                           <div>
+                              <img src="img/slider/item1.jpg" alt="">
+                           </div>
+                           <div>
+                              <img src="img/slider/item4.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="slider__item">
+                        <div class="slider__inner">
+                           <div>
+                              <img src="img/slider/item2.jpg" alt="">
+                           </div>
+                           <div>
+                              <img src="img/slider/item5.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="slider__item">
+                        <div class="slider__inner">
+                           <div>
+                              <img src="img/slider/item3.jpg" alt="">
+                           </div>
+                           <div>
+                              <img src="img/slider/item6.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="slider__item">
+                        <div class="slider__inner">
+                           <div>
+                              <img src="img/slider/item4.jpg" alt="">
+                           </div>
+                           <div>
+                              <img src="img/slider/item7.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="slider__item">
+                        <div class="slider__inner">
+                           <div>
+                              <img src="img/slider/item1.jpg" alt="">
+                           </div>
+                           <div>
+                              <img src="img/slider/item4.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="slider__item">
+                        <div class="slider__inner">
+                           <div>
+                              <img src="img/slider/item2.jpg" alt="">
+                           </div>
+                           <div>
+                              <img src="img/slider/item5.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="slider__item">
+                        <div class="slider__inner">
+                           <div>
+                              <img src="img/slider/item3.jpg" alt="">
+                           </div>
+                           <div>
+                              <img src="img/slider/item6.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="slider__item">
+                        <div class="slider__inner">
+                           <div>
+                              <img src="img/slider/item4.jpg" alt="">
+                           </div>
+                           <div>
+                              <img src="img/slider/item7.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+
+                    
+
+                  </div>
+               </div>
+               <div class="gallery-tab-item__block js-tab-content" data-tab="4">
+                  <div class="slider">
+                     <div class="slider__item">
+                        <div class="slider__inner">
+                           <div>
+                              <img src="img/slider/item3.jpg" alt="">
+                           </div>
+                           <div>
+                              <img src="img/slider/item6.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="slider__item">
+                        <div class="slider__inner">
+                           <div>
+                              <img src="img/slider/item1.jpg" alt="">
+                           </div>
+                           <div>
+                              <img src="img/slider/item4.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="slider__item">
+                        <div class="slider__inner">
+                           <div>
+                              <img src="img/slider/item2.jpg" alt="">
+                           </div>
+                           <div>
+                              <img src="img/slider/item5.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="slider__item">
+                        <div class="slider__inner">
+                           <div>
+                              <img src="img/slider/item4.jpg" alt="">
+                           </div>
+                           <div>
+                              <img src="img/slider/item7.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="slider__item">
+                        <div class="slider__inner">
+                           <div>
+                              <img src="img/slider/item1.jpg" alt="">
+                           </div>
+                           <div>
+                              <img src="img/slider/item4.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="slider__item">
+                        <div class="slider__inner">
+                           <div>
+                              <img src="img/slider/item2.jpg" alt="">
+                           </div>
+                           <div>
+                              <img src="img/slider/item5.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="slider__item">
+                        <div class="slider__inner">
+                           <div>
+                              <img src="img/slider/item3.jpg" alt="">
+                           </div>
+                           <div>
+                              <img src="img/slider/item6.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="slider__item">
+                        <div class="slider__inner">
+                           <div>
+                              <img src="img/slider/item4.jpg" alt="">
+                           </div>
+                           <div>
+                              <img src="img/slider/item7.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="slider__item">
+                        <div class="slider__inner">
+                           <div>
+                              <img src="img/slider/item1.jpg" alt="">
+                           </div>
+                           <div>
+                              <img src="img/slider/item4.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="slider__item">
+                        <div class="slider__inner">
+                           <div>
+                              <img src="img/slider/item2.jpg" alt="">
+                           </div>
+                           <div>
+                              <img src="img/slider/item5.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="slider__item">
+                        <div class="slider__inner">
+                           <div>
+                              <img src="img/slider/item3.jpg" alt="">
+                           </div>
+                           <div>
+                              <img src="img/slider/item6.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="slider__item">
+                        <div class="slider__inner">
+                           <div>
+                              <img src="img/slider/item4.jpg" alt="">
+                           </div>
+                           <div>
+                              <img src="img/slider/item7.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="slider__item">
+                        <div class="slider__inner">
+                           <div>
+                              <img src="img/slider/item1.jpg" alt="">
+                           </div>
+                           <div>
+                              <img src="img/slider/item4.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="slider__item">
+                        <div class="slider__inner">
+                           <div>
+                              <img src="img/slider/item2.jpg" alt="">
+                           </div>
+                           <div>
+                              <img src="img/slider/item5.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="slider__item">
+                        <div class="slider__inner">
+                           <div>
+                              <img src="img/slider/item3.jpg" alt="">
+                           </div>
+                           <div>
+                              <img src="img/slider/item6.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="slider__item">
+                        <div class="slider__inner">
+                           <div>
+                              <img src="img/slider/item4.jpg" alt="">
+                           </div>
+                           <div>
+                              <img src="img/slider/item7.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </main>
+   <script src="js/common.js"></script>
+</body>
+
+</html>
